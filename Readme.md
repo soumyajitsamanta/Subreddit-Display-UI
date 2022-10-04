@@ -15,7 +15,9 @@ Infinite scroll not added due to problem getting it to work.
 
 ## Instructions To Run.
 
-Inside of the FrontEndTest folder which the below shell takes you to.
+Inside of the FrontEndTest folder which the below shell takes you to, modify the environment/environment.ts 
+and environment/environment.prod.ts  appSecret needs to be filled. It has been kept out as required to save 
+the account from others modifying/stealing everything.
 
 ```sh
 cd FrontEndTest
@@ -27,7 +29,7 @@ echo "Build for prod by below command"
 ng build -c production
 ```
 
-Already build dist is also given in dist/front-end-test folder. It can run directly from any server which can host it.
+Already build dist is in dist/front-end-test folder. It can run directly from any server which can host it.
 
 ```sh
 cd dist/front-end-test
