@@ -1,0 +1,5 @@
+<div class="item-container">
+    <div class="item" *ngFor="let item of subredditData.data?.children">
+        <app-reddit-list-item [item]="item"></app-reddit-list-item>
+    </div>
+</div>

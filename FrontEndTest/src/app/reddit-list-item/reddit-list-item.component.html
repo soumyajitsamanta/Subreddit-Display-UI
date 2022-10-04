@@ -1,0 +1,23 @@
+<div class="item-details">
+  <div class="vLayout">
+    <div class="title">
+      <a [href]="'https://www.reddit.com' + item.data.permalink">
+        {{ item.data.title }}
+      </a>
+    </div>
+    <img
+      *ngIf="item.data.thumbnail"
+      [width]="item.data.thumbnail_width"
+      [height]="item.data.thumbnail_height"
+      class="thumbnail"
+      [src]="item.data.thumbnail"
+      alt="Thumbnail"
+    />
+    <div class="subreddit-name">
+      Subreddit:
+      <a [href]="'https://www.reddit.com/r/' + item.data.subreddit">{{
+        item.data.subreddit_name_prefixed
+      }}</a>
+    </div>
+  </div>
+</div>
